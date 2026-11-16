@@ -1,0 +1,157 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  background: linear-gradient(135deg, #07152f, #123b68, #087eaa);
+}
+
+.weather-container {
+  width: 100%;
+  max-width: 500px;
+  padding: 30px;
+  border-radius: 25px;
+  background: rgba(255,255,255,0.10);
+  border: 1px solid rgba(255,255,255,0.2);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.25);
+  backdrop-filter: blur(15px);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 28px;
+}
+
+header h2 {
+  font-size: 1.35rem;
+}
+
+header span {
+  font-size: 0.7rem;
+  color: #69e5ff;
+  letter-spacing: 1px;
+}
+
+.search-box {
+  display: flex;
+  gap: 10px;
+}
+
+.search-box input {
+  min-width: 0;
+  flex: 1;
+  padding: 13px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  font: inherit;
+}
+
+.search-box button {
+  padding: 12px 17px;
+  border: none;
+  border-radius: 10px;
+  background: #38d9ff;
+  color: #06213b;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.search-box button:hover {
+  background: white;
+}
+
+#status {
+  min-height: 25px;
+  margin-top: 15px;
+  color: #c7eaff;
+  font-size: 0.85rem;
+}
+
+.weather-card {
+  margin-top: 15px;
+  padding: 25px 15px;
+  text-align: center;
+  border-radius: 20px;
+  background: rgba(4, 20, 45, 0.32);
+}
+
+#date {
+  color: #b8d8f0;
+  font-size: 0.85rem;
+}
+
+#city {
+  margin-top: 12px;
+  font-size: 1.7rem;
+}
+
+#weatherIcon {
+  margin: 8px 0;
+  font-size: 4rem;
+}
+
+#temperature {
+  font-size: 3rem;
+  line-height: 1.2;
+}
+
+#condition {
+  margin: 10px 0 25px;
+  color: #8deaff;
+}
+
+.details {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.detail {
+  padding: 15px 5px;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.10);
+}
+
+.detail span {
+  font-size: 1.5rem;
+}
+
+.detail p {
+  margin: 5px 0;
+  color: #c4e2f7;
+  font-size: 0.75rem;
+}
+
+.detail h3 {
+  font-size: 0.9rem;
+}
+
+footer {
+  margin-top: 25px;
+  text-align: center;
+  color: #c4e2f7;
+  font-size: 0.8rem;
+}
+
+@media (max-width: 420px) {
+  .weather-container { padding: 20px 14px; }
+  header h2 { font-size: 1.1rem; }
+  .detail { padding: 12px 3px; }
+  .detail h3 { font-size: 0.8rem; }
+}

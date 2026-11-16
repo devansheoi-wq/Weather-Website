@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WeatherNow | Live Weather</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="weather-container">
+    <header>
+      <h2>🌤 WeatherNow</h2>
+      <span>LIVE WEATHER</span>
+    </header>
+
+    <section class="search-box">
+      <input id="cityInput" type="text" placeholder="Enter city name..." aria-label="City name">
+      <button id="searchBtn">Search</button>
+    </section>
+
+    <p id="status" role="status">Search for a city to see its weather.</p>
+
+    <section class="weather-card">
+      <p id="date">Current Weather</p>
+      <h1 id="city">--</h1>
+      <div id="weatherIcon">🌤️</div>
+      <h2 id="temperature">--°C</h2>
+      <h3 id="condition">Search for a city</h3>
+
+      <div class="details">
+        <div class="detail">
+          <span>💧</span>
+          <p>Humidity</p>
+          <h3 id="humidity">--%</h3>
+        </div>
+
+        <div class="detail">
+          <span>💨</span>
+          <p>Wind Speed</p>
+          <h3 id="wind">-- km/h</h3>
+        </div>
+
+        <div class="detail">
+          <span>🌡️</span>
+          <p>Feels Like</p>
+          <h3 id="feels">--°C</h3>
+        </div>
+      </div>
+    </section>
+
+    <footer>Made with ❤️ by Devansh Pandey</footer>
+  </main>
+</body>
+</html>
